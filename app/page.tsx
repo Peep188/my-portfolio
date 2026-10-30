@@ -71,62 +71,50 @@ const TRANSLATIONS = {
           skills: ["React Native", "NestJS", "WebSockets", "MongoDB"],
           image: "/findmich.png"
         },
-        {
-          num: "02",
-          title: "Ciervo Cars – Luxury Car Rental & Concierge Website",
-          desc: "Luxury car rental and concierge platform with premium browsing, vehicle discovery, and seamless booking journeys.",
-          fullDesc: "Ciervo Cars is a premium web platform for a luxury car rental and concierge service. The site helps users explore vehicles by category, including Luxury, Sports, Electric/Hybrid, and SUV, while offering services such as test drives, workshop bookings, pre-ITV checks, certified vehicles, financing, and maintenance plans. Built with Next.js and GSAP, the experience combines elegant motion, strong branding, and conversion-focused UX to deliver a polished, responsive luxury experience across all devices.",
-          skills: ["Next.js", "GSAP", "Responsive UI", "Luxury Branding", "Conversion UX"],
-          image: "https://ciervo-cars.vercel.app/_next/image?url=%2Fimages%2Fplacement%2Fplacement.webp&w=828&q=75",
-          link: "https://ciervo-cars.vercel.app/"
-        },
+    {
+  num: "02",
+  title: "Ciervo Cars – Luxury Car Rental & Concierge Website",
+  desc: "Luxury car rental and concierge platform with premium browsing, vehicle discovery, and seamless booking journeys.",
+  fullDesc: "Ciervo Cars is a premium web platform for a luxury car rental and concierge service. The site helps users explore vehicles by category, including Luxury, Sports, Electric/Hybrid, and SUV, while offering services such as test drives, workshop bookings, pre-ITV checks, certified vehicles, financing, and maintenance plans. Built with Next.js and GSAP, the experience combines elegant motion, strong branding, and conversion-focused UX to deliver a polished, responsive luxury experience across all devices.",
+  skills: ["Next.js", "GSAP", "Responsive UI", "Luxury Branding", "Conversion UX"],
+  image: "/ciervo-cover.png",
+  link: "https://ciervo-cars.vercel.app/"
+},
         {
           num: "03",
           title: "Denvel — E-commerce Website",
           desc: "Modern, responsive e-commerce platform for a Moroccan home-appliance brand with product discovery, filtering, and detailed catalog browsing.",
           fullDesc: "Denvel — E-commerce Website is a modern and responsive e-commerce platform developed for Denvel, a Moroccan home-appliance brand. The website provides a complete digital catalog for discovering and exploring a wide range of household appliances, including TVs, refrigerators, washing machines, cooking appliances, air conditioners, and small appliances. The platform includes category-based product navigation, detailed product pages, technical specifications, product search and filtering, and responsive layouts optimized for different screen sizes. As a Full-Stack Developer, I was responsible for developing the website, implementing the frontend interfaces, building the backend architecture, integrating product data, and creating reusable components for managing the different product categories and specifications. Technologies: Symfony, PHP, Twig, JavaScript, HTML5, CSS3, MySQL. Key features include responsive and modern UI, product catalog and categories, product detail pages, technical specifications, search and filtering, reusable UI components, dynamic content management, backend development with Symfony, database integration with MySQL, and mobile, tablet, and desktop optimization.",
           skills: ["Symfony", "PHP", "Twig", "JavaScript", "HTML5", "CSS3", "MySQL"],
-          image: "/planet_ecommerce.png"
+          image: "/denvel-cover.png",
         },
+       
+      
         {
           num: "04",
-          title: "Portfolio Website",
-          desc: "Interactive developer portfolio with dynamic cartoon animations and multi-language support."
-        },
-        {
-          num: "05",
-          title: "Task Manager",
-          desc: "A collaborative productivity application with drag-and-drop kanban boards and task analytics."
-        },
-        {
-          num: "06",
           title: "ERP Business Dashboard",
           desc: "Modern ERP-style business dashboard for managing real estate, sales, finance, HR, logistics, and administration in one platform.",
           fullDesc: "This project is a modern ERP-style business dashboard built for managing real estate, sales, finance, HR, logistics, and administration in one platform. It includes KPI tracking, financial analytics, project management, client and property management, procurement workflows, and administrative settings, all presented in a clean and responsive admin interface. Technologies used: React, TypeScript, Vite, Tailwind CSS, React Router, Recharts, Zustand, and modern UI libraries. Built with React, TypeScript, Tailwind CSS, React Router, Recharts, and Zustand.",
           skills: ["React", "TypeScript", "Tailwind CSS", "React Router", "Recharts", "Zustand"],
-          image: "/planet_saturn_final_v10.png"
+          image: "/ERP Business Dashboard.png"
         },
+        
         {
-          num: "07",
-          title: "Hotel Booking Platform",
-          desc: "A premium booking application with filtering, calendar scheduling, and invoice compilation."
-        },
-        {
-          num: "08",
+          num: "05",
           title: "Automotive AI SaaS Landing Page",
           desc: "Modern SaaS landing page for an AI operational sync platform built for automotive and manufacturing teams.",
           fullDesc: "My role: Front end developer. Project description: Developed a modern SaaS landing page for an AI operational sync platform in the automotive and manufacturing industry. The platform improves real-time factory operations, reduces repeated mistakes, and aligns communication across teams. The website includes a hero section, trusted partners, 2026 industry challenges, ecosystem breakdown (Operations, Alignment, Transparency, Context), value proposition, team section, and a contact form for enterprise leads. Design focuses on clarity, trust, and enterprise-grade positioning. Link: https://www.bridgyn.com/ Skills and deliverables: Next.js, GSAP, Tailwind CSS.",
           skills: ["Next.js", "GSAP", "Tailwind CSS"],
-          image: "/planet_ai.png",
+          image: "/AI SaaS Landing Page.png",
           link: "https://www.bridgyn.com/"
         },
         {
-          num: "09",
+          num: "06",
           title: "Akzente — Retail Merchandising Platform",
           desc: "Full-stack retail services management platform connecting staff, clients, and field merchandisers across operations and reporting workflows.",
           fullDesc: "My role: Full-Stack Developer. Project description: A full-stack retail services management platform connecting Akzente staff, clients, and field merchandisers. Built with a single NestJS REST API and three Angular apps (HeadOffice, Client Portal, Merchandiser). It includes project and report management, branch search with Mapbox, real-time notifications via Socket.IO, Excel import/export, JWT authentication with refresh tokens, and multilingual support (DE/EN). Designed with a scalable architecture using TypeORM, PostgreSQL, and modular features. Skills and deliverables: Angular, NestJS, PostgreSQL.",
           skills: ["Angular", "NestJS", "PostgreSQL"],
-          image: "/planet_saturn_final_v10.png"
+          image: "/Akzente.png"
         }
       ]
     },
@@ -896,16 +884,44 @@ const CodingCartoon = ({ lang }: { lang: "en" | "de" | "fr" }) => {
 };
 
 const PROJECT_PLANETS = [
-  { img: "/planet_saturn_final_v10.png", glow: "planet-glow-purple" },
-  { img: "/planet_saturn_final_v10.png", glow: "planet-glow-purple" },
-  { img: "/planet_portfolio.png", glow: "planet-glow-purple" },
-  { img: "/planet_task.png", glow: "planet-glow-purple" },
-  { img: "/planet_ai.png", glow: "planet-glow-purple" },
-  { img: "/planet_hotel.png", glow: "planet-glow-purple" }
+  {
+    img: "/planet_saturn_final_v10.png",
+    glow: "planet-glow-purple",
+    texture: "radial-gradient(circle at 30% 28%, rgba(255,255,255,0.98) 0%, rgba(251,191,36,0.9) 10%, rgba(249,115,22,0.96) 22%, rgba(120,53,15,0.9) 48%, rgba(15,23,42,1) 100%)"
+  },
+  {
+    img: "/planet_saturn_final_v10.png",
+    glow: "planet-glow-purple",
+    texture: "radial-gradient(circle at 32% 30%, rgba(255,255,255,0.98) 0%, rgba(191,219,254,0.85) 12%, rgba(59,130,246,0.95) 20%, rgba(37,99,235,0.9) 42%, rgba(15,23,42,1) 100%)"
+  },
+  {
+    glow: "planet-glow-purple",
+    texture: "radial-gradient(circle at 32% 30%, rgba(255,255,255,0.98) 0%, rgba(253,186,116,0.9) 10%, rgba(251,146,60,0.95) 18%, rgba(180,83,9,0.75) 42%, rgba(15,23,42,1) 100%)"
+  },
+  {
+    glow: "planet-glow-purple",
+    texture: "radial-gradient(circle at 32% 28%, rgba(255,255,255,0.98) 0%, rgba(153,246,228,0.9) 12%, rgba(45,212,191,0.96) 28%, rgba(13,148,136,0.85) 50%, rgba(15,23,42,1) 100%)"
+  },
+  {
+    glow: "planet-glow-purple",
+    texture: "radial-gradient(circle at 35% 26%, rgba(255,255,255,0.98) 0%, rgba(125,211,252,0.9) 8%, rgba(59,130,246,0.96) 28%, rgba(30,64,175,0.9) 48%, rgba(15,23,42,1) 100%)"
+  },
+  {
+    glow: "planet-glow-purple",
+    texture: "radial-gradient(circle at 35% 30%, rgba(255,255,255,0.98) 0%, rgba(251,113,133,0.9) 12%, rgba(236,72,153,0.96) 28%, rgba(192,132,252,0.92) 52%, rgba(88,28,135,1) 100%)"
+  }
 ];
 
 const getPlanetData = (idx: number) => {
   return PROJECT_PLANETS[idx % PROJECT_PLANETS.length];
+};
+
+const getPlanetBackground = (planet: { img?: string; texture?: string }) => {
+  if (planet.img) {
+    return `url("${planet.img}") center / cover no-repeat`;
+  }
+
+  return `${planet.texture ?? "radial-gradient(circle at 35% 30%, rgba(255,255,255,0.9) 0%, rgba(96,165,250,0.85) 12%, rgba(30,64,175,0.9) 32%, rgba(15,23,42,1) 100%)"} center / cover no-repeat`;
 };
 
 export default function Home() {
@@ -2047,8 +2063,13 @@ export default function Home() {
           height: 100%;
           background-size: cover !important;
           background-position: center !important;
-          filter: drop-shadow(0 0 25px rgba(236, 72, 153, 0.45))
-                  drop-shadow(0 0 45px rgba(168, 85, 247, 0.25));
+          border-radius: 50%;
+          box-shadow:
+            0 0 16px rgba(255, 255, 255, 0.2),
+            0 0 30px rgba(216, 180, 254, 0.7),
+            0 0 55px rgba(236, 72, 153, 0.7),
+            0 0 90px rgba(168, 85, 247, 0.6),
+            0 0 120px rgba(168, 85, 247, 0.5);
           transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
           animation: float-planet 4s ease-in-out infinite alternate;
         }
@@ -2061,63 +2082,63 @@ export default function Home() {
         .planet-center-content {
           position: relative;
           z-index: 4;
-          width: 82%;
-          height: 82%;
+          width: 100%;
+          height: 100%;
           border-radius: 50%;
-          background: rgba(10, 8, 18, 0.72);
+          background: rgba(17, 11, 23, 0.78);
           backdrop-filter: blur(12px);
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           text-align: center;
-          padding: 24px;
+          padding: 20px 24px 18px;
           color: #fff;
           border: 1px solid rgba(255, 255, 255, 0.08);
-          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.05);
+          box-shadow: inset 0 0 28px rgba(255, 255, 255, 0.04), inset 0 0 42px rgba(168, 85, 247, 0.1);
         }
 
         .planet-center-badge {
-          background: var(--accent);
+          background: linear-gradient(135deg, rgba(216,180,254,0.9), rgba(168,85,247,0.95));
           color: #fff;
           font-size: 10px;
           font-weight: 800;
           text-transform: uppercase;
           letter-spacing: 1.5px;
-          padding: 4px 10px;
-          border-radius: 20px;
+          padding: 5px 12px;
+          border-radius: 999px;
           display: inline-flex;
           align-items: center;
-          gap: 4px;
-          margin-bottom: 8px;
-          box-shadow: 0 0 10px var(--accent);
+          gap: 6px;
+          margin-bottom: 10px;
+          box-shadow: 0 0 12px rgba(216,180,254,0.75), 0 0 20px rgba(168,85,247,0.5);
         }
 
         .planet-center-num {
           font-size: 14px;
           font-weight: 800;
-          color: var(--muted);
+          color: rgba(255,255,255,0.9);
           letter-spacing: 2px;
-          margin-bottom: 4px;
-          opacity: 0.8;
+          margin-bottom: 6px;
+          opacity: 0.9;
         }
 
         .planet-center-title {
           font-family: var(--font-display);
           font-size: 20px;
           font-weight: 800;
-          line-height: 1.2;
-          margin-bottom: 8px;
-          background: linear-gradient(135deg, #fff, var(--muted));
+          line-height: 1.05;
+          margin-bottom: 10px;
+          background: linear-gradient(135deg, #fff, rgba(220, 214, 255, 0.88));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
 
         .planet-center-desc {
           font-size: 12px;
-          line-height: 1.4;
-          color: #e0e0e0;
-          margin-bottom: 16px;
+          line-height: 1.45;
+          color: rgba(255,255,255,0.88);
+          margin-bottom: 18px;
           display: -webkit-box;
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
@@ -3029,36 +3050,63 @@ export default function Home() {
           </motion.div>
 
           <div className="projects-galaxy-wrapper">
-            {/* Central Large Planet */}
-            <div className="planet-center-container">
-              <div
-                className={`planet-center-sphere ${getPlanetData(activeProject).glow}`}
-                style={{
-                  background: `url(${t.projects.items[activeProject]?.image || getPlanetData(activeProject).img}?v=11) center / cover no-repeat`
-                }}
-              />
-              <div className="planet-center-content">
-                <div className="planet-center-badge">✦ {t.projects.featured}</div>
-                <div className="planet-center-num">{t.projects.items[activeProject]?.num}</div>
-                <h3 className="planet-center-title">{t.projects.items[activeProject]?.title}</h3>
-                <p className="planet-center-desc">{t.projects.items[activeProject]?.desc}</p>
+      
+{/* Central Large Planet */}
+<div className="planet-center-container">
+  <div
+    className={`planet-center-sphere ${getPlanetData(activeProject).glow}`}
+    style={{
+      background: "radial-gradient(circle at 35% 25%, rgba(255,255,255,0.22) 0%, rgba(216,180,254,0.42) 8%, rgba(192,132,252,0.72) 18%, rgba(168,85,247,0.8) 32%, rgba(91,18,115,0.96) 58%, rgba(20,10,27,1) 100%)",
+      borderRadius: "50%",
+      overflow: "hidden",
+    }}
+  />
 
-                <button
-                  className="planet-center-view-btn"
-                  onClick={() => {
-                    setModalProject(activeProject);
-                    setModalOpen(true);
-                  }}
-                  aria-label={t.projects.view}
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                    <circle cx="12" cy="12" r="3" />
-                  </svg>
-                </button>
-                <div className="planet-center-view-label">{t.projects.view}</div>
-              </div>
-            </div>
+  <div className="planet-center-content">
+    <div className="planet-center-badge">
+      ✦ {t.projects.featured}
+    </div>
+
+    <div className="planet-center-num">
+      {t.projects.items[activeProject]?.num}
+    </div>
+
+    <h3 className="planet-center-title">
+      {t.projects.items[activeProject]?.title}
+    </h3>
+
+    <p className="planet-center-desc">
+      {t.projects.items[activeProject]?.desc}
+    </p>
+  </div>
+
+  <button
+    className="planet-center-view-btn"
+    onClick={() => {
+      setModalProject(activeProject);
+      setModalOpen(true);
+    }}
+    aria-label={t.projects.view}
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  </button>
+
+  <div className="planet-center-view-label">
+    {t.projects.view}
+  </div>
+</div>
 
             {/* Orbiting Planets for ALL projects */}
             {t.projects.items.map((item, idx) => {
@@ -3089,7 +3137,7 @@ export default function Home() {
                   </div>
                   <div
                     className={`planet-orbiting-sphere ${planetData.glow}`}
-                    style={{ background: `url(${planetData.img})` }}
+                    style={{ background: getPlanetBackground(planetData) }}
                   />
                   <button
                     className="planet-orbiting-eye"
