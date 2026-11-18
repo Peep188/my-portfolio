@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
+import PhoneMockup from "@/components/PhoneMockup";
 
 const NAV_IDS = ["aboutme", "skills", "projects", "experience", "contact"];
 
@@ -2720,62 +2721,96 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO */}
-      <section id="home" className="hero" ref={heroRef}>
-        <div className="hero-bg">
-          <div className="hero-grid" />
-          <div className="hero-glow" />
-          <div className="hero-glow2" />
-          <div className="hero-orb" />
-        </div>
-        <motion.div
-          className="hero-content"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+  
+{/* HERO */}
+<section id="home" className="hero" ref={heroRef}>
+  <div className="hero-bg">
+    <div className="hero-grid" />
+    <div className="hero-glow" />
+    <div className="hero-glow2" />
+    <div className="hero-orb" />
+  </div>
+
+  <div className="hero-layout">
+
+    {/* YOUR INTRODUCTION */}
+    <motion.div
+      className="hero-content"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+    >
+      <motion.div
+        className="hero-tag"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+      >
+        {t.hero.tag}
+      </motion.div>
+
+      <h1 className="hero-name">
+        {typed}
+        <span className="cursor" />
+      </h1>
+
+      <p className="hero-role">
+        {t.hero.role.split(" & ")[0]} &amp;{" "}
+        <em>{t.hero.role.split(" & ")[1]}</em>
+      </p>
+
+      <p className="hero-desc">
+        {t.hero.desc}
+      </p>
+
+      <div className="hero-btns">
+        <motion.a
+          href="/resume.pdf"
+          download="Malak_Metouagui_Resume.pdf"
+          className="btn-primary"
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.98 }}
+          style={{
+            textDecoration: "none",
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center"
+          }}
         >
-          <motion.div
-            className="hero-tag"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            {t.hero.tag}
-          </motion.div>
-          <h1 className="hero-name">
-            {typed}
-            <span className="cursor" />
-          </h1>
-          <p className="hero-role">
-            {t.hero.role.split(" & ")[0]} &amp; <em>{t.hero.role.split(" & ")[1]}</em>
-          </p>
-          <p className="hero-desc">
-            {t.hero.desc}
-          </p>
-          <div className="hero-btns">
-            <motion.a
-              href="/resume.pdf"
-              download="Malak_Metouagui_Resume.pdf"
-              className="btn-primary"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-              style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", justifyContent: "center" }}
-            >
-              {t.hero.resume}
-            </motion.a>
-            <motion.a
-              href="#contact"
-              className="btn-outline"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-              style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}
-            >
-              {t.hero.contact}
-            </motion.a>
-          </div>
-        </motion.div>
-        <div className="hero-scroll">{t.hero.scroll}</div>
-      </section>
+          {t.hero.resume}
+        </motion.a>
+
+        <motion.a
+          href="#contact"
+          className="btn-outline"
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.98 }}
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            textDecoration: "none"
+          }}
+        >
+          {t.hero.contact}
+        </motion.a>
+      </div>
+    </motion.div>
+
+    {/* SMARTPHONE MOCKUP */}
+    <motion.div
+      className="hero-phone"
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ delay: 0.5, duration: 1 }}
+    >
+      <PhoneMockup />
+    </motion.div>
+
+  </div>
+
+  <div className="hero-scroll">{t.hero.scroll}</div>
+</section>
+
 
       {/* ABOUT */}
       <section id="aboutme" className="section">
